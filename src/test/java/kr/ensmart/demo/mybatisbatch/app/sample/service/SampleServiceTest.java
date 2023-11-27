@@ -60,4 +60,14 @@ class SampleServiceTest {
 		log.info("insertSamplesBatch2 duration: {} ms", Duration.between(start, end).toMillis());
 	}
 
+	@Test
+	void insertSamplesBatch3() throws Exception {
+		Instant start = Instant.now();
+		
+		sampleService.insertSamplesBatch3();
+		
+		Instant end = Instant.now();
+		log.info("insertSamplesBatch2 duration: {} ms", Duration.between(start, end).toMillis());
+	}
+
 }
